@@ -1,0 +1,108 @@
+{
+ "checked": "2026-10-16",
+ "results": [
+  {
+   "id": "wro-india-2026",
+   "url": "https://wroindia.org/season-2026/",
+   "ok": true,
+   "changed": true,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "wro-india-2026",
+   "url": "https://registration.wroindia.org/registration_Information.html",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "fll-india-2026-27",
+   "url": "https://www.firstrobotics.co.in/first-lego-league/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "stemrobo-sil-2",
+   "url": "https://www.stemrobo.com/registration/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "iro-2026-online",
+   "url": "https://indianroboticsolympiad.in/online",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "iro-2026-inperson",
+   "url": "https://indianroboticsolympiad.in/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "technoxian-nrc-2026",
+   "url": "https://worso.org/userpanel/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "technoxian-nrc-2026",
+   "url": "https://roboclub.technoxian.com/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "techradiance-jr-2027",
+   "url": "https://techradiance.in/coding-robotics-championship-for-students/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "techradiance-hackathon-2026-27",
+   "url": "https://techradiance.in/coding-robotics-championship-for-students/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "minecraft-velocity-prize-2026",
+   "url": "https://education.minecraft.net/en-us/discover/velocity-prize",
+   "ok": false,
+   "error": "The read operation timed out"
+  }
+ ]
+}

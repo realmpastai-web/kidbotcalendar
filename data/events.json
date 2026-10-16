@@ -1,0 +1,203 @@
+[
+ {
+  "id": "wro-india-2026",
+  "name": "World Robot Olympiad (WRO) India Season 2026",
+  "organizer": "India STEM Foundation",
+  "type": "robotics",
+  "start_date": "2026-08-26",
+  "end_date": "2026-08-28",
+  "registration_deadline": "2026-07-25",
+  "fee": "INR 20,000 per team (National Championship); one free Future Innovators team per school",
+  "age_min": 8,
+  "age_max": 22,
+  "age_band": "Elementary 8-12, Junior 11-15, Senior 14-19, RoboSports 11-19, Future Engineers 14-22",
+  "city": "Hyderabad",
+  "mode": "in-person",
+  "status": "completed",
+  "url": "https://wroindia.org/season-2026/",
+  "source_urls": [
+   "https://wroindia.org/season-2026/",
+   "https://registration.wroindia.org/registration_Information.html"
+  ],
+  "notes": "Nationals at GMR Arena, Aerocity, Hyderabad. Deadlines: RoboMission 2 Jul, RoboSports/Future Engineers 25 Jul 2026.",
+  "last_checked": "2026-10-16"
+ },
+ {
+  "id": "fll-india-2026-27",
+  "name": "FIRST LEGO League India 2026-27 (BIOGLOW)",
+  "organizer": "FIRST India",
+  "type": "robotics",
+  "start_date": null,
+  "end_date": null,
+  "registration_deadline": null,
+  "fee": "Not published on official page",
+  "age_min": 6,
+  "age_max": 16,
+  "age_band": "Explore 6-10, Future Edition 8-16",
+  "city": "Multiple (regionals + nationals)",
+  "mode": "in-person",
+  "status": "registration-open",
+  "url": "https://www.firstrobotics.co.in/first-lego-league/",
+  "source_urls": [
+   "https://www.firstrobotics.co.in/first-lego-league/"
+  ],
+  "notes": "Season calendar section exists but dates not listed in page text yet. Theme set included with registration; LEGO hardware bought separately.",
+  "last_checked": "2026-10-16"
+ },
+ {
+  "id": "stemrobo-sil-2",
+  "name": "STEAM Innovation League (SIL) 2.0",
+  "organizer": "STEMROBO",
+  "type": "robotics",
+  "start_date": "2026-11-25",
+  "end_date": "2026-12-15",
+  "registration_deadline": "2026-06-30",
+  "fee": "INR 999 per team (India); USD 30 (international)",
+  "age_min": 6,
+  "age_max": 17,
+  "age_band": "Grades 1-5 InnoKit Maker League; Grades 6-11 InnoSDG Quest",
+  "city": "Regional rounds + national/international finale",
+  "mode": "hybrid",
+  "status": "registration-closed",
+  "url": "https://www.stemrobo.com/registration/",
+  "source_urls": [
+   "https://www.stemrobo.com/registration/"
+  ],
+  "notes": "Age range approximated from grades. Teams of 1-3.",
+  "last_checked": "2026-10-16"
+ },
+ {
+  "id": "iro-2026-online",
+  "name": "Indian Robotics Olympiad 2026 (Online mode)",
+  "organizer": "ROBO-G",
+  "type": "robotics",
+  "start_date": null,
+  "end_date": "2026-12-21",
+  "registration_deadline": "2026-12-21",
+  "fee": "See registration form",
+  "age_min": 7,
+  "age_max": 15,
+  "age_band": "Innovators 7-10, Techies 10-15",
+  "city": "Online",
+  "mode": "online",
+  "status": "registration-open",
+  "url": "https://indianroboticsolympiad.in/online",
+  "source_urls": [
+   "https://indianroboticsolympiad.in/online"
+  ],
+  "notes": "Video + score sheet submission by 21 Dec 2026; results first week of Jan 2027. Deadline shown is submission deadline.",
+  "last_checked": "2026-10-16"
+ },
+ {
+  "id": "iro-2026-inperson",
+  "name": "Indian Robotics Olympiad 2026 (In-person National Round)",
+  "organizer": "ROBO-G",
+  "type": "robotics",
+  "start_date": "2026-11-01",
+  "end_date": "2026-12-31",
+  "registration_deadline": null,
+  "fee": "See registration form",
+  "age_min": null,
+  "age_max": null,
+  "age_band": "See rules",
+  "city": "Bangalore",
+  "mode": "in-person",
+  "status": "registration-open",
+  "url": "https://indianroboticsolympiad.in/",
+  "source_urls": [
+   "https://indianroboticsolympiad.in/"
+  ],
+  "notes": "Official page says Nov/Dec 2026; exact date not published (dates shown are the window).",
+  "last_checked": "2026-10-16"
+ },
+ {
+  "id": "technoxian-nrc-2026",
+  "name": "TechnoXian National Robotics Championship 2026 (dates unconfirmed)",
+  "organizer": "TechnoXian / WORSO",
+  "type": "robotics",
+  "start_date": "2026-11-20",
+  "end_date": "2026-11-22",
+  "registration_deadline": null,
+  "fee": "INR 2,500 + 18% GST per challenge (WORSO page); INR 2,000 + GST on RoboClub page",
+  "age_min": 8,
+  "age_max": null,
+  "age_band": "Junior (8-16) and Senior categories",
+  "city": "Noida (Delhi NCR)",
+  "mode": "in-person",
+  "status": "registration-open",
+  "url": "https://worso.org/userpanel/",
+  "source_urls": [
+   "https://worso.org/userpanel/",
+   "https://roboclub.technoxian.com/"
+  ],
+  "notes": "CONFLICT: roboclub page lists 23-25 Oct 2026, venue TBD; WORSO page lists 20-22 Nov 2026, Noida Indoor Stadium. Verify before relying.",
+  "last_checked": "2026-10-16",
+  "date_unconfirmed": true
+ },
+ {
+  "id": "techradiance-jr-2027",
+  "name": "TechRadiance Junior World Cup 2027",
+  "organizer": "TechRadiance (with E-Cell IIT Delhi)",
+  "type": "robotics",
+  "start_date": "2027-01-01",
+  "end_date": "2027-01-31",
+  "registration_deadline": null,
+  "fee": "See event page",
+  "age_min": 8,
+  "age_max": 18,
+  "age_band": "Class 3-12",
+  "city": "Delhi, Chennai",
+  "mode": "in-person",
+  "status": "registration-open",
+  "url": "https://techradiance.in/coding-robotics-championship-for-students/",
+  "source_urls": [
+   "https://techradiance.in/coding-robotics-championship-for-students/"
+  ],
+  "notes": "National rounds January 2027 (exact dates not given); international round April 2027. Ages approximated from grades.",
+  "last_checked": "2026-10-16"
+ },
+ {
+  "id": "techradiance-hackathon-2026-27",
+  "name": "TechRadiance Coding Hackathon 2026-27",
+  "organizer": "TechRadiance",
+  "type": "coding",
+  "start_date": null,
+  "end_date": null,
+  "registration_deadline": null,
+  "fee": "See event page",
+  "age_min": 8,
+  "age_max": null,
+  "age_band": "School & college",
+  "city": "See event page",
+  "mode": "in-person",
+  "status": "registration-open",
+  "url": "https://techradiance.in/coding-robotics-championship-for-students/",
+  "source_urls": [
+   "https://techradiance.in/coding-robotics-championship-for-students/"
+  ],
+  "notes": "Dates not published on overview page.",
+  "last_checked": "2026-10-16"
+ },
+ {
+  "id": "minecraft-velocity-prize-2026",
+  "name": "Minecraft Education Velocity Prize",
+  "organizer": "Minecraft Education (Microsoft)",
+  "type": "minecraft",
+  "start_date": null,
+  "end_date": "2026-11-17",
+  "registration_deadline": "2026-11-17",
+  "fee": "Free (requires Minecraft Education access)",
+  "age_min": 13,
+  "age_max": 16,
+  "age_band": "13-16",
+  "city": "Online (global, teacher-submitted)",
+  "mode": "online",
+  "status": "registration-open",
+  "url": "https://education.minecraft.net/en-us/discover/velocity-prize",
+  "source_urls": [
+   "https://education.minecraft.net/en-us/discover/velocity-prize"
+  ],
+  "notes": "Global challenge open to Indian schools; teacher submits students' 3 fastest times.",
+  "last_checked": "2026-10-16"
+ }
+]

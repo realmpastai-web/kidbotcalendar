@@ -1,0 +1,1 @@
+# Run weekly: 0 6 * * 1 cd /workspace/kidbotcalendar && python3 scripts/update.py >> data/update.log 2>&1
