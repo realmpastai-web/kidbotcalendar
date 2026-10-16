@@ -39,4 +39,5 @@ for x in ev:
     rows = "".join(f"<tr><th align=left>{k}</th><td>{e(x[k])}</td></tr>" for k in ["organizer","type","start_date","end_date","registration_deadline","fee","age_band","city","mode","status","notes","last_checked"])
     src = " ".join(f'<a href="{e(u)}" rel=nofollow>{e(u)}</a>' for u in x["source_urls"])
     (D/f"events/{x['id']}.html").write_text(page(x["name"], f"<h1>{e(x['name'])}</h1><table>{rows}</table><p><a href=\"{e(x['url'])}\">Official page →</a></p><p><small>Sources: {src}</small></p>", "../"))
+(D/"CNAME").write_text("kidbotcalendar.in\n")
 print(f"built {len(ev)} events, {len(month)} deadlines this month")
