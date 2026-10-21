@@ -10,17 +10,30 @@ CSS = """body{font-family:system-ui,sans-serif;max-width:960px;margin:auto;paddi
 a{color:#0b5}.card{border:1px solid #ddd;border-radius:8px;padding:.8rem;margin:.6rem 0}
 .tag{display:inline-block;background:#eef;border-radius:4px;padding:0 .4rem;margin-right:.3rem;font-size:.85em}
 .box{background:#fafafa;border:1px dashed #aaa;padding:.8rem;margin:1rem 0}select,input{margin:.2rem}"""
-def page(title, body, p=""):
+SITE = "https://kidbotcalendar.in/"
+def page(title, body, p="", desc="", path=""):
+    desc = desc or "Upcoming kids' robotics, coding and Minecraft competitions in India, with dates, deadlines, fees and ages from official organizer pages."
     return f"""<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
-<title>{e(title)} | KidBotCalendar</title><style>{CSS}</style><body><header><a href="{p}index.html"><b>KidBotCalendar.in</b></a> — kids' robotics, coding &amp; Minecraft competitions in India</header>{body}
+<title>{e(title)} | KidBotCalendar</title><meta name=description content="{e(desc)}"><link rel=canonical href="{SITE}{path}"><style>{CSS}</style><body><header><a href="{p}index.html"><b>KidBotCalendar.in</b></a> — kids' robotics, coding &amp; Minecraft competitions in India</header>{body}
 <div class=box><b>Disclosure:</b> Some links may become affiliate links (e.g. robotics kits); we may earn a small commission at no cost to you. Featured listings will always be labelled "Featured". We do not publish reviews or ratings. Data is taken from official organizer pages; always confirm on the official site.</div>
 <footer><small>Built {today}. Preview — not launched.</small></footer></body></html>"""
-def card(x):
+def card(x, p=""):
     return f"""<div class="card ev" data-type="{e(x['type'])}" data-amin="{x['age_min'] or 0}" data-amax="{x['age_max'] or 99}" data-dl="{x['registration_deadline'] or ''}" data-city="{e(x['city']).lower()}">
-<h3><a href="events/{x['id']}.html">{e(x['name'])}</a></h3><span class=tag>{e(x['type'])}</span><span class=tag>{e(x['mode'])}</span><span class=tag>{e(x['status'])}</span>
+<h3><a href="{p}events/{x['id']}.html">{e(x['name'])}</a></h3><span class=tag>{e(x['type'])}</span><span class=tag>{e(x['mode'])}</span><span class=tag>{e(x['status'])}</span>
 <div>Ages: {e(x['age_band'])} · Where: {e(x['city'])}</div><div>{"<b>⚠ Dates unconfirmed — official pages disagree.</b> " if x.get("date_unconfirmed") else ""}Dates: {e(x["start_date"])} → {e(x['end_date'])} · Deadline: {e(x['registration_deadline'])}</div></div>"""
-month = [x for x in ev if x["registration_deadline"] and x["registration_deadline"][:7]==today.isoformat()[:7]]
-srt = sorted(ev, key=lambda x: x["registration_deadline"] or x["end_date"] or "9999")
+def past(x):  # event over: end (or start) date before today, or marked completed
+    d = x["end_date"] or x["start_date"]
+    return x["status"] == "completed" or (d is not None and d < today.isoformat())
+up = [x for x in ev if not past(x)]; old = [x for x in ev if past(x)]
+srt = sorted(up, key=lambda x: x["registration_deadline"] if (x["registration_deadline"] or "") >= today.isoformat() else (x["start_date"] or x["end_date"] or "9999"))
+ym = today.isoformat()[:7]
+month = [x for x in up if (x["registration_deadline"] or "")[:7] == ym]
+def months():  # this month + next month
+    y, m = today.year, today.month
+    for _ in range(2):
+        yield datetime.date(y, m, 1)
+        y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+def mslug(d): return f"deadlines-{d.strftime('%B').lower()}-{d.year}.html"
 filt = """<div class=box><label>Age <input id=age type=number min=4 max=22 size=3></label>
 <label>Type <select id=type><option value="">All</option><option>robotics</option><option>coding</option><option>minecraft</option></select></label>
 <label>City <input id=city placeholder="e.g. Bangalore, Online"></label>
@@ -29,15 +42,40 @@ filt = """<div class=box><label>Age <input id=age type=number min=4 max=22 size=
 document.querySelectorAll('.ev').forEach(d=>{let s=true;if(a&&(a<+d.dataset.amin||a>+d.dataset.amax))s=false;if(t&&d.dataset.type!=t)s=false;
 if(c&&!d.dataset.city.includes(c))s=false;if(o&&d.dataset.dl&&d.dataset.dl<T)s=false;d.style.display=s?'':'none'})}
 document.querySelectorAll('input,select').forEach(i=>i.oninput=f)</script>""" % today
-body = f"""<h1>Kids' tech competitions in India</h1><p>{len(ev)} events tracked.</p>
+TYPES = {"robotics": "Robotics", "coding": "Coding", "minecraft": "Minecraft"}
+nav = "<p>Browse: " + " · ".join([f'<a href="{mslug(d)}">Deadlines {d.strftime("%B %Y")}</a>' for d in months()] +
+      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
+body = f"""<h1>Kids' tech competitions in India</h1><p>{len(up)} upcoming events tracked ({len(old)} past, see <a href="past-events.html">archive</a>).</p>{nav}
 <h2>Deadlines this month</h2>{''.join(card(x) for x in month) or '<p>No verified deadlines this month.</p>'}
-<h2>All events</h2>{filt}{''.join(card(x) for x in srt)}
+<h2>Upcoming events</h2>{filt}{''.join(card(x) for x in srt)}
 <div class=box><b>Weekly deadline email</b> (coming soon) <input disabled placeholder="you@example.com"><button disabled>Notify me</button></div>
 <div class=box><b>Featured listing</b> placeholder — academies/organizers can sponsor a clearly-labelled spot. Not yet available.</div>"""
-(D/"index.html").write_text(page("Home", body))
+pages = [("index.html", "Kids' robotics, coding & Minecraft competitions in India", body, "")]
+for d in months():
+    k = d.isoformat()[:7]; mn = d.strftime("%B %Y")
+    dl = sorted([x for x in up if (x["registration_deadline"] or "")[:7] == k], key=lambda x: x["registration_deadline"])
+    on = sorted([x for x in up if x["start_date"] and x["start_date"][:7] <= k <= (x["end_date"] or x["start_date"])[:7]], key=lambda x: x["start_date"])
+    b = f"""<h1>Kids' robotics &amp; coding competition deadlines: {mn}</h1><p>Registration and submission deadlines falling in {mn} for kids' robotics, coding and Minecraft competitions in India, from official organizer pages. Always confirm on the official site.</p>{nav}
+<h2>Deadlines in {mn} ({len(dl)})</h2>{''.join(card(x) for x in dl) or '<p>No verified deadlines in this month yet.</p>'}
+<h2>Competitions happening in {mn} ({len(on)})</h2>{''.join(card(x) for x in on) or '<p>No verified competition dates in this month yet.</p>'}"""
+    pages.append((mslug(d), f"Competition deadlines {mn}", b, f"Kids' robotics, coding and Minecraft competition deadlines in India for {mn}: {len(dl)} verified deadlines and {len(on)} events, with dates, fees and ages."))
+for k, v in TYPES.items():
+    L = [x for x in srt if x["type"] == k]
+    pages.append((f"{k}-competitions.html", f"{v} competitions for kids in India", f"<h1>Upcoming {v.lower()} competitions for kids in India</h1>{nav}{''.join(card(x) for x in L) or '<p>No verified upcoming events right now.</p>'}",
+                  f"{len(L)} upcoming {v.lower()} competitions for school kids in India with dates, deadlines, fees and age groups from official organizer pages."))
+L = [x for x in srt if x["mode"] in ("online", "hybrid")]
+pages.append(("online-competitions.html", "Online robotics & coding competitions for kids in India", f"<h1>Online &amp; hybrid kids' tech competitions (India)</h1><p>Events kids can enter online from anywhere in India.</p>{nav}{''.join(card(x) for x in L)}",
+              f"{len(L)} online or hybrid robotics, coding and Minecraft competitions open to kids in India, with deadlines and ages."))
+pages.append(("past-events.html", "Past kids' tech competitions (archive)", f"<h1>Past events (archive)</h1><p>Events whose dates have passed. Kept for reference; check the organizer for next season.</p>{nav}{''.join(card(x) for x in sorted(old, key=lambda x: x['end_date'] or '', reverse=True)) or '<p>None yet.</p>'}",
+              "Archive of past kids' robotics, coding and Minecraft competitions in India tracked by KidBotCalendar."))
+for fn, t, b, dsc in pages:
+    (D/fn).write_text(page(t, b, desc=dsc, path="" if fn == "index.html" else fn))
 for x in ev:
     rows = "".join(f"<tr><th align=left>{k}</th><td>{e(x[k])}</td></tr>" for k in ["organizer","type","start_date","end_date","registration_deadline","fee","age_band","city","mode","status","notes","last_checked"])
     src = " ".join(f'<a href="{e(u)}" rel=nofollow>{e(u)}</a>' for u in x["source_urls"])
-    (D/f"events/{x['id']}.html").write_text(page(x["name"], f"<h1>{e(x['name'])}</h1><table>{rows}</table><p><a href=\"{e(x['url'])}\">Official page →</a></p><p><small>Sources: {src}</small></p>", "../"))
+    (D/f"events/{x['id']}.html").write_text(page(x["name"], f"{'<p><b>This event is over (archived).</b></p>' if past(x) else ''}<h1>{e(x['name'])}</h1><table>{rows}</table><p><a href=\"{e(x['url'])}\">Official page →</a></p><p><small>Sources: {src}</small></p>", "../", f"{x['name']}: dates, registration deadline, fee, ages and location, from the official organizer page.", f"events/{x['id']}.html"))
 (D/"CNAME").write_text("kidbotcalendar.in\n")
-print(f"built {len(ev)} events, {len(month)} deadlines this month")
+urls = [fn for fn, *_ in pages] + [f"events/{x['id']}.html" for x in ev]
+(D/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{SITE}{'' if u == 'index.html' else u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls) + "</urlset>\n")
+(D/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
+print(f"built {len(ev)} events ({len(up)} upcoming, {len(old)} past), {len(month)} deadlines this month, {len(pages)} pages + sitemap")

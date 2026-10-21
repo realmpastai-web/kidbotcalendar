@@ -130,7 +130,7 @@
    "https://worso.org/userpanel/",
    "https://roboclub.technoxian.com/"
   ],
-  "notes": "CONFLICT: roboclub page lists 23-25 Oct 2026, venue TBD; WORSO page lists 20-22 Nov 2026, Noida Indoor Stadium. Verify before relying.",
+  "notes": "CONFLICT (re-checked 2026-10-21): roboclub.technoxian.com lists National Robotics Championship 23-25 Oct 2026, venue TBD; worso.org lists 20-22 Nov 2026, Noida Indoor Stadium. Verify with organizer before relying.",
   "last_checked": "2026-10-19",
   "date_unconfirmed": true
  },
@@ -199,5 +199,51 @@
   ],
   "notes": "Global challenge open to Indian schools; teacher submits students' 3 fastest times.",
   "last_checked": "2026-10-16"
+ },
+ {
+  "id": "bebras-india-2026",
+  "name": "Bebras India Computational Thinking Challenge 2026",
+  "organizer": "ACM India CSpathshala (Bebras India)",
+  "type": "coding",
+  "start_date": "2026-11-16",
+  "end_date": "2026-12-05",
+  "registration_deadline": "2026-11-28",
+  "fee": "Free",
+  "age_min": 8,
+  "age_max": 18,
+  "age_band": "8-18 (school students)",
+  "city": "Online (take from school or home)",
+  "mode": "online",
+  "status": "registration-open",
+  "url": "https://www.bebras.in/register",
+  "source_urls": [
+   "https://www.bebras.in/register",
+   "https://www.bebras.in/"
+  ],
+  "notes": "Schools/teachers register as coordinators at bebras.cspathshala.org/admin and upload students; school registration open till 28 Nov 2026. Offered in 12 languages. Results date to be announced.",
+  "last_checked": "2026-10-21"
+ },
+ {
+  "id": "zio-2027",
+  "name": "Zonal Informatics Olympiad (ZIO-2027), Indian Computing Olympiad",
+  "organizer": "IARCS (Indian Association for Research in Computing Science)",
+  "type": "coding",
+  "start_date": "2026-11-21",
+  "end_date": "2026-11-21",
+  "registration_deadline": "2026-11-06",
+  "fee": "INR 472 (INR 400 + GST)",
+  "age_min": null,
+  "age_max": null,
+  "age_band": "School students up to Class 12 (no lower age limit)",
+  "city": "Exam centres in ~36 cities incl. Bangalore, Chennai, Delhi NCR, Hyderabad, Mumbai, Pune, Kolkata",
+  "mode": "in-person",
+  "status": "registration-open",
+  "url": "https://www.iarcs.org.in/inoi/current.php",
+  "source_urls": [
+   "https://www.iarcs.org.in/inoi/current.php",
+   "https://www.iarcs.org.in/inoi/"
+  ],
+  "notes": "Saturday 21 Nov 2026, 2:00-5:00 pm IST, computerised test on TCS iON (pen-and-paper working, answers typed). Online registration open till Fri 6 Nov 2026, 9:00 pm IST. First round of the path to IOI. ZCO-2027 dates not yet announced.",
+  "last_checked": "2026-10-21"
  }
 ]
