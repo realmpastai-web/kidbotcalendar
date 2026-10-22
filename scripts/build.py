@@ -44,7 +44,7 @@ if(c&&!d.dataset.city.includes(c))s=false;if(o&&d.dataset.dl&&d.dataset.dl<T)s=f
 document.querySelectorAll('input,select').forEach(i=>i.oninput=f)</script>""" % today
 TYPES = {"robotics": "Robotics", "coding": "Coding", "minecraft": "Minecraft"}
 nav = "<p>Browse: " + " · ".join([f'<a href="{mslug(d)}">Deadlines {d.strftime("%B %Y")}</a>' for d in months()] +
-      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
+      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
 body = f"""<h1>Kids' tech competitions in India</h1><p>{len(up)} upcoming events tracked ({len(old)} past, see <a href="past-events.html">archive</a>).</p>{nav}
 <h2>Deadlines this month</h2>{''.join(card(x) for x in month) or '<p>No verified deadlines this month.</p>'}
 <h2>Upcoming events</h2>{filt}{''.join(card(x) for x in srt)}
@@ -66,6 +66,17 @@ for k, v in TYPES.items():
 L = [x for x in srt if x["mode"] in ("online", "hybrid")]
 pages.append(("online-competitions.html", "Online robotics & coding competitions for kids in India", f"<h1>Online &amp; hybrid kids' tech competitions (India)</h1><p>Events kids can enter online from anywhere in India.</p>{nav}{''.join(card(x) for x in L)}",
               f"{len(L)} online or hybrid robotics, coding and Minecraft competitions open to kids in India, with deadlines and ages."))
+CITIES = {"bangalore": ("Bangalore (Bengaluru)", ["bangalore", "bengaluru"]), "chennai": ("Chennai", ["chennai"]),
+          "delhi-ncr": ("Delhi NCR", ["delhi", "noida", "gurugram"]), "hyderabad": ("Hyderabad", ["hyderabad"]),
+          "pune": ("Pune", ["pune"]), "mumbai": ("Mumbai", ["mumbai"])}
+for k, (v, keys) in CITIES.items():
+    L = [x for x in srt if any(w in ((x["city"] or "") + " " + (x["notes"] or "")).lower() for w in keys)]
+    if not L: continue
+    pages.append((f"competitions-in-{k}.html", f"Kids' robotics & coding competitions in {v}", f"<h1>Kids' robotics, coding &amp; Minecraft competitions in {e(v)}</h1><p>Upcoming competitions with a venue, zonal round or exam centre in {e(v)}, as named on the official organizer page. Online events are listed <a href=\"online-competitions.html\">separately</a>. Always confirm venue and dates on the official site.</p>{nav}{''.join(card(x) for x in L)}",
+                  f"{len(L)} upcoming kids' robotics, coding and Minecraft competitions with rounds or venues in {v}, with dates, deadlines, fees and ages from official pages."))
+L = [x for x in srt if (x["fee"] or "").lower().startswith("free")]
+pages.append(("free-competitions.html", "Free robotics & coding competitions for kids in India", f"<h1>Free kids' robotics &amp; coding competitions in India</h1><p>Upcoming competitions whose official page lists the entry as free. Kits, hardware or software may still cost money; check each event's notes.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified free events right now.</p>'}",
+              f"{len(L)} free-to-enter robotics, coding and Minecraft competitions for school kids in India, verified on official organizer pages."))
 pages.append(("past-events.html", "Past kids' tech competitions (archive)", f"<h1>Past events (archive)</h1><p>Events whose dates have passed. Kept for reference; check the organizer for next season.</p>{nav}{''.join(card(x) for x in sorted(old, key=lambda x: x['end_date'] or '', reverse=True)) or '<p>None yet.</p>'}",
               "Archive of past kids' robotics, coding and Minecraft competitions in India tracked by KidBotCalendar."))
 for fn, t, b, dsc in pages:
