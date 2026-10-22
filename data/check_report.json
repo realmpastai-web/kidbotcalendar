@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-21",
+ "checked": "2026-10-22",
  "results": [
   {
    "id": "wro-india-2026",
@@ -108,7 +108,7 @@
    "id": "bebras-india-2026",
    "url": "https://www.bebras.in/register",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -117,7 +117,7 @@
    "id": "bebras-india-2026",
    "url": "https://www.bebras.in/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -135,6 +135,33 @@
   {
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "avishkaar-irc-league-2026",
+   "url": "https://community.avishkaar.cc/avishkaar-league-2026",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "jmt-shaastra-2026-27",
+   "url": "https://jmt.shaastra.org/",
+   "ok": true,
+   "changed": false,
+   "years_seen": []
+  },
+  {
+   "id": "ftc-india-2026-27",
+   "url": "https://www.firstrobotics.co.in/first-tech-challenge/",
    "ok": true,
    "changed": false,
    "years_seen": [
