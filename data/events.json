@@ -42,7 +42,7 @@
    "https://www.firstrobotics.co.in/first-lego-league/"
   ],
   "notes": "Season calendar section exists but dates not listed in page text yet. Theme set included with registration; LEGO hardware bought separately.",
-  "last_checked": "2026-10-22"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "stemrobo-sil-2",
@@ -64,7 +64,7 @@
    "https://www.stemrobo.com/registration/"
   ],
   "notes": "Official page (re-checked 2026-10-22): registration deadline 24 Aug 2026; project video submission deadline 15 Oct 2026; national & international grand finale between 25 Nov and 15 Dec 2026. Age range approximated from grades. Teams of 1-3.",
-  "last_checked": "2026-10-22"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "iro-2026-online",
@@ -130,8 +130,8 @@
    "https://worso.org/userpanel/",
    "https://roboclub.technoxian.com/"
   ],
-  "notes": "CONFLICT (re-checked 2026-10-21): roboclub.technoxian.com lists National Robotics Championship 23-25 Oct 2026, venue TBD; worso.org lists 20-22 Nov 2026, Noida Indoor Stadium. Verify with organizer before relying.",
-  "last_checked": "2026-10-22",
+  "notes": "CONFLICT (re-checked 2026-10-23): roboclub.technoxian.com lists National Robotics Championship 23-25 Oct 2026, venue TBD; worso.org lists 20-22 Nov 2026, Noida Indoor Stadium. Verify with organizer before relying.",
+  "last_checked": "2026-10-23",
   "date_unconfirmed": true
  },
  {
@@ -266,7 +266,7 @@
    "https://community.avishkaar.cc/avishkaar-league-2026"
   ],
   "notes": "Registration for each zonal closes one day before that zonal. Remaining zonals per official page: Hyderabad 14 Nov, Bengaluru (NPS KR Puram) 21 Nov, South Delhi 21 Nov, Chennai 21 Nov, West Delhi 5 Dec, Pune 5 Dec, Indore 15 Dec 2026; Sikkim Dec 2026 (tentative); Rudrapur TBA. Internationals in Delhi 15-16 Jan 2027 (subject to change). Fee not stated on the official page. Ages approximated from grades.",
-  "last_checked": "2026-10-22"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "jmt-shaastra-2026-27",
@@ -311,5 +311,72 @@
   ],
   "notes": "Official page: registrations open; regional qualifier tournaments January & February 2027, National Championship February 2027 in Pune (exact dates not in page text; dates shown are the window). Teams of 15-20 students with at least 2 coaches; a 6-digit FIRST Team Number is required. Leadership Award nominations due 15 Dec 2026 (EST).",
   "last_checked": "2026-10-22"
+ },
+ {
+  "id": "sof-icso-2026-27",
+  "name": "SOF International Computer Science Olympiad (ICSO) 2026-27",
+  "organizer": "Science Olympiad Foundation (SOF)",
+  "type": "coding",
+  "start_date": "2026-12-17",
+  "end_date": "2026-12-17",
+  "registration_deadline": null,
+  "fee": "INR 170 (per official page)",
+  "age_min": 6,
+  "age_max": 16,
+  "age_band": "Classes 1-10",
+  "city": "In participating schools across India",
+  "mode": "in-person",
+  "status": "registration-open",
+  "url": "https://sofworld.org/icso",
+  "source_urls": [
+   "https://sofworld.org/icso",
+   "https://sofworld.org/exam-schedule"
+  ],
+  "notes": "Offline exam held in school; students cannot apply individually, only via their school. Level 1 Date 1 (24 Sep 2026) has passed; Date 2 is 17 Dec 2026. No Level 2 for ICSO. Official rule: schools must apply at least 30 days before the chosen exam date. Ages approximated from classes.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "nypo-2026",
+  "name": "National Young Programmers Olympiad (NYPO) 2026",
+  "organizer": "Polaris School of Technology (co-organiser: Navneet)",
+  "type": "coding",
+  "start_date": "2026-09-26",
+  "end_date": "2026-12-07",
+  "registration_deadline": null,
+  "fee": "INR 499 application fee",
+  "age_min": 13,
+  "age_max": 18,
+  "age_band": "Classes 8-10 Junior Track; Classes 11-12 Senior Track",
+  "city": "Online",
+  "mode": "online",
+  "status": "registration-open",
+  "url": "https://olympiad.polariscampus.com/",
+  "source_urls": [
+   "https://olympiad.polariscampus.com/"
+  ],
+  "notes": "Three rounds: Round 1 Tech Aptitude on 26 Sep, 10 Oct and 31 Oct 2026; Round 2 Video Submission in November 2026; Round 3 Vibecoding online in the first week of Dec 2026 (exact date not published; end date shown is the end of that week). No prior coding knowledge required. Registration deadline not stated on the official page. Ages approximated from classes.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "oll-techfest-robotics-2026",
+  "name": "OLL Robotics Championship at Techfest IIT Bombay 2026-27",
+  "organizer": "OLL (Clonefutura Live Solutions) with Techfest IIT Bombay",
+  "type": "robotics",
+  "start_date": "2026-10-24",
+  "end_date": "2026-12-17",
+  "registration_deadline": null,
+  "fee": "Not stated on official page",
+  "age_min": 6,
+  "age_max": 18,
+  "age_band": "RoboSumo & RoboRacer: all school students; Innovation Challenge: Junior Grades 4-7, Senior Grades 8-12",
+  "city": "Regional qualifiers: Kanpur, Delhi, Bangalore; Grand Finale IIT Bombay (Mumbai)",
+  "mode": "in-person",
+  "status": "registration-closed",
+  "url": "https://oll.co/techfest",
+  "source_urls": [
+   "https://oll.co/techfest"
+  ],
+  "notes": "Official page shows 'Registrations Closed' (checked 2026-10-23). Teams of 3-5. Regional qualifiers: East IIT Kanpur 24 Oct, North Modern Public School Shalimar Bagh Delhi 21 Nov, South RVCE Bangalore 26 Nov 2026, Central TBA. Grand Finale at IIT Bombay 17 Dec 2026. Prize pool INR 1,50,000. Ages approximated from grades.",
+  "last_checked": "2026-10-23"
  }
 ]

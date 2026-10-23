@@ -44,7 +44,7 @@ if(c&&!d.dataset.city.includes(c))s=false;if(o&&d.dataset.dl&&d.dataset.dl<T)s=f
 document.querySelectorAll('input,select').forEach(i=>i.oninput=f)</script>""" % today
 TYPES = {"robotics": "Robotics", "coding": "Coding", "minecraft": "Minecraft"}
 nav = "<p>Browse: " + " · ".join([f'<a href="{mslug(d)}">Deadlines {d.strftime("%B %Y")}</a>' for d in months()] +
-      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
+      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="competitions-by-age.html">By age</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
 body = f"""<h1>Kids' tech competitions in India</h1><p>{len(up)} upcoming events tracked ({len(old)} past, see <a href="past-events.html">archive</a>).</p>{nav}
 <h2>Deadlines this month</h2>{''.join(card(x) for x in month) or '<p>No verified deadlines this month.</p>'}
 <h2>Upcoming events</h2>{filt}{''.join(card(x) for x in srt)}
@@ -74,6 +74,13 @@ for k, (v, keys) in CITIES.items():
     if not L: continue
     pages.append((f"competitions-in-{k}.html", f"Kids' robotics & coding competitions in {v}", f"<h1>Kids' robotics, coding &amp; Minecraft competitions in {e(v)}</h1><p>Upcoming competitions with a venue, zonal round or exam centre in {e(v)}, as named on the official organizer page. Online events are listed <a href=\"online-competitions.html\">separately</a>. Always confirm venue and dates on the official site.</p>{nav}{''.join(card(x) for x in L)}",
                   f"{len(L)} upcoming kids' robotics, coding and Minecraft competitions with rounds or venues in {v}, with dates, deadlines, fees and ages from official pages."))
+AGES = [(6, 10), (11, 14), (15, 18)]
+ab = [f'<h1>Kids\' robotics, coding &amp; Minecraft competitions in India by age</h1><p>Upcoming competitions grouped by the age range on the official page (where an organizer lists only school grades/classes, ages are approximated). An event appears in every group its age range overlaps. Events with no published age range are not listed here.</p>{nav}']
+for lo, hi in AGES:
+    L = [x for x in srt if x["age_min"] is not None and x["age_min"] <= hi and (x["age_max"] if x["age_max"] is not None else 99) >= lo]
+    ab.append(f'<h2 id="ages-{lo}-{hi}">Ages {lo}-{hi} ({len(L)})</h2>' + (''.join(card(x) for x in L) or '<p>No verified upcoming events for this age group.</p>'))
+pages.append(("competitions-by-age.html", "Kids' robotics & coding competitions by age (6-10, 11-14, 15-18)", "".join(ab),
+              "Upcoming robotics, coding and Minecraft competitions in India for ages 6-10, 11-14 and 15-18, with dates, deadlines and fees from official organizer pages."))
 L = [x for x in srt if (x["fee"] or "").lower().startswith("free")]
 pages.append(("free-competitions.html", "Free robotics & coding competitions for kids in India", f"<h1>Free kids' robotics &amp; coding competitions in India</h1><p>Upcoming competitions whose official page lists the entry as free. Kits, hardware or software may still cost money; check each event's notes.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified free events right now.</p>'}",
               f"{len(L)} free-to-enter robotics, coding and Minecraft competitions for school kids in India, verified on official organizer pages."))
