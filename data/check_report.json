@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-22",
+ "checked": "2026-10-23",
  "results": [
   {
    "id": "wro-india-2026",
@@ -168,6 +168,39 @@
     "2026",
     "2027"
    ]
+  },
+  {
+   "id": "sof-icso-2026-27",
+   "url": "https://sofworld.org/icso",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "sof-icso-2026-27",
+   "url": "https://sofworld.org/exam-schedule",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "nypo-2026",
+   "url": "https://olympiad.polariscampus.com/",
+   "ok": true,
+   "changed": false,
+   "years_seen": []
+  },
+  {
+   "id": "oll-techfest-robotics-2026",
+   "url": "https://oll.co/techfest",
+   "ok": true,
+   "changed": false,
+   "years_seen": []
   }
  ]
 }
