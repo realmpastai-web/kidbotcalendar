@@ -27,10 +27,10 @@ def past(x):  # event over: end (or start) date before today, or marked complete
 up = [x for x in ev if not past(x)]; old = [x for x in ev if past(x)]
 srt = sorted(up, key=lambda x: x["registration_deadline"] if (x["registration_deadline"] or "") >= today.isoformat() else (x["start_date"] or x["end_date"] or "9999"))
 ym = today.isoformat()[:7]
-month = [x for x in up if (x["registration_deadline"] or "")[:7] == ym]
-def months():  # this month + next month
+month = [x for x in up if (x["registration_deadline"] or "")[:7] == ym and x["registration_deadline"] >= today.isoformat()]
+def months():  # this month + next two months
     y, m = today.year, today.month
-    for _ in range(2):
+    for _ in range(3):
         yield datetime.date(y, m, 1)
         y, m = (y + 1, 1) if m == 12 else (y, m + 1)
 def mslug(d): return f"deadlines-{d.strftime('%B').lower()}-{d.year}.html"
@@ -44,7 +44,7 @@ if(c&&!d.dataset.city.includes(c))s=false;if(o&&d.dataset.dl&&d.dataset.dl<T)s=f
 document.querySelectorAll('input,select').forEach(i=>i.oninput=f)</script>""" % today
 TYPES = {"robotics": "Robotics", "coding": "Coding", "minecraft": "Minecraft"}
 nav = "<p>Browse: " + " · ".join([f'<a href="{mslug(d)}">Deadlines {d.strftime("%B %Y")}</a>' for d in months()] +
-      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="competitions-by-age.html">By age</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
+      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="registration-open.html">Registration open</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="competitions-in-hyderabad.html">Hyderabad</a>', '<a href="competitions-in-pune.html">Pune</a>', '<a href="competitions-in-mumbai.html">Mumbai</a>', '<a href="competitions-by-age.html">By age</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
 body = f"""<h1>Kids' tech competitions in India</h1><p>{len(up)} upcoming events tracked ({len(old)} past, see <a href="past-events.html">archive</a>).</p>{nav}
 <h2>Deadlines this month</h2>{''.join(card(x) for x in month) or '<p>No verified deadlines this month.</p>'}
 <h2>Upcoming events</h2>{filt}{''.join(card(x) for x in srt)}
@@ -53,7 +53,7 @@ body = f"""<h1>Kids' tech competitions in India</h1><p>{len(up)} upcoming events
 pages = [("index.html", "Kids' robotics, coding & Minecraft competitions in India", body, "")]
 for d in months():
     k = d.isoformat()[:7]; mn = d.strftime("%B %Y")
-    dl = sorted([x for x in up if (x["registration_deadline"] or "")[:7] == k], key=lambda x: x["registration_deadline"])
+    dl = sorted([x for x in up if (x["registration_deadline"] or "")[:7] == k and x["registration_deadline"] >= today.isoformat()], key=lambda x: x["registration_deadline"])
     on = sorted([x for x in up if x["start_date"] and x["start_date"][:7] <= k <= (x["end_date"] or x["start_date"])[:7]], key=lambda x: x["start_date"])
     b = f"""<h1>Kids' robotics &amp; coding competition deadlines: {mn}</h1><p>Registration and submission deadlines falling in {mn} for kids' robotics, coding and Minecraft competitions in India, from official organizer pages. Always confirm on the official site.</p>{nav}
 <h2>Deadlines in {mn} ({len(dl)})</h2>{''.join(card(x) for x in dl) or '<p>No verified deadlines in this month yet.</p>'}
@@ -84,6 +84,9 @@ pages.append(("competitions-by-age.html", "Kids' robotics & coding competitions 
 L = [x for x in srt if (x["fee"] or "").lower().startswith("free")]
 pages.append(("free-competitions.html", "Free robotics & coding competitions for kids in India", f"<h1>Free kids' robotics &amp; coding competitions in India</h1><p>Upcoming competitions whose official page lists the entry as free. Kits, hardware or software may still cost money; check each event's notes.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified free events right now.</p>'}",
               f"{len(L)} free-to-enter robotics, coding and Minecraft competitions for school kids in India, verified on official organizer pages."))
+L = sorted([x for x in up if x["status"] == "registration-open" and (x["registration_deadline"] or "9999") >= today.isoformat()], key=lambda x: x["registration_deadline"] or "9999")
+pages.append(("registration-open.html", "Kids' robotics & coding competitions with registration open now (India)", f"<h1>Kids' robotics, coding &amp; Minecraft competitions with registration open now</h1><p>Competitions whose official page shows registration as open and whose deadline (if published) has not passed, soonest deadline first. Events with no published deadline are listed last. Always confirm on the official site before paying or travelling.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified open registrations right now.</p>'}",
+              f"{len(L)} kids' robotics, coding and Minecraft competitions in India with registration open now, sorted by deadline, from official organizer pages."))
 pages.append(("past-events.html", "Past kids' tech competitions (archive)", f"<h1>Past events (archive)</h1><p>Events whose dates have passed. Kept for reference; check the organizer for next season.</p>{nav}{''.join(card(x) for x in sorted(old, key=lambda x: x['end_date'] or '', reverse=True)) or '<p>None yet.</p>'}",
               "Archive of past kids' robotics, coding and Minecraft competitions in India tracked by KidBotCalendar."))
 for fn, t, b, dsc in pages:

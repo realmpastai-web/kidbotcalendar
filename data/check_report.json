@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-23",
+ "checked": "2026-10-24",
  "results": [
   {
    "id": "wro-india-2026",
@@ -126,7 +126,7 @@
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/current.php",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -136,7 +136,7 @@
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -146,7 +146,7 @@
    "id": "avishkaar-irc-league-2026",
    "url": "https://community.avishkaar.cc/avishkaar-league-2026",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
