@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build static site from data/events.json into dist/."""
-import json, html, datetime, pathlib, shutil
+import json, html, datetime, pathlib, shutil, re
 R = pathlib.Path(__file__).resolve().parent.parent
 D = R/"dist"; ev = json.load(open(R/"data/events.json"))
 today = datetime.date.today()
@@ -44,7 +44,7 @@ if(c&&!d.dataset.city.includes(c))s=false;if(o&&d.dataset.dl&&d.dataset.dl<T)s=f
 document.querySelectorAll('input,select').forEach(i=>i.oninput=f)</script>""" % today
 TYPES = {"robotics": "Robotics", "coding": "Coding", "minecraft": "Minecraft"}
 nav = "<p>Browse: " + " · ".join([f'<a href="{mslug(d)}">Deadlines {d.strftime("%B %Y")}</a>' for d in months()] +
-      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="registration-open.html">Registration open</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="competitions-in-hyderabad.html">Hyderabad</a>', '<a href="competitions-in-pune.html">Pune</a>', '<a href="competitions-in-mumbai.html">Mumbai</a>', '<a href="competitions-by-age.html">By age</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
+      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="registration-open.html">Registration open</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="competitions-in-hyderabad.html">Hyderabad</a>', '<a href="competitions-in-pune.html">Pune</a>', '<a href="competitions-in-mumbai.html">Mumbai</a>', '<a href="competitions-by-age.html">By age</a>', '<a href="olympiads.html">Olympiads</a>', '<a href="ai-competitions.html">AI competitions</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
 body = f"""<h1>Kids' tech competitions in India</h1><p>{len(up)} upcoming events tracked ({len(old)} past, see <a href="past-events.html">archive</a>).</p>{nav}
 <h2>Deadlines this month</h2>{''.join(card(x) for x in month) or '<p>No verified deadlines this month.</p>'}
 <h2>Upcoming events</h2>{filt}{''.join(card(x) for x in srt)}
@@ -81,6 +81,12 @@ for lo, hi in AGES:
     ab.append(f'<h2 id="ages-{lo}-{hi}">Ages {lo}-{hi} ({len(L)})</h2>' + (''.join(card(x) for x in L) or '<p>No verified upcoming events for this age group.</p>'))
 pages.append(("competitions-by-age.html", "Kids' robotics & coding competitions by age (6-10, 11-14, 15-18)", "".join(ab),
               "Upcoming robotics, coding and Minecraft competitions in India for ages 6-10, 11-14 and 15-18, with dates, deadlines and fees from official organizer pages."))
+L = [x for x in srt if re.search(r"olympiad", x["name"], re.I)]
+pages.append(("olympiads.html", "Robotics, coding & AI olympiads for school students in India", f"<h1>Robotics, coding &amp; AI olympiads for school students in India</h1><p>Upcoming competitions that call themselves an olympiad on the official organizer page, sorted by next deadline or date. Some are national selection routes to international olympiads (e.g. informatics, AI); others are organizer-run olympiads. Always confirm dates, fees and eligibility on the official site.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified upcoming olympiads right now.</p>'}",
+              f"{len(L)} upcoming robotics, coding and AI olympiads for school students in India, with dates, deadlines, fees and ages from official organizer pages."))
+L = [x for x in srt if re.search(r"\bAI\b|artificial intelligence", x["name"] + " " + (x["notes"] or ""), re.I)]
+pages.append(("ai-competitions.html", "AI competitions & olympiads for school kids in India", f"<h1>AI competitions &amp; olympiads for school kids in India</h1><p>Upcoming competitions whose official page names artificial intelligence (AI) as a focus. Always confirm dates, fees and eligibility on the official site.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified upcoming AI competitions right now.</p>'}",
+              f"{len(L)} upcoming AI competitions and olympiads for school students in India, with dates, fees and age groups from official organizer pages."))
 L = [x for x in srt if (x["fee"] or "").lower().startswith("free")]
 pages.append(("free-competitions.html", "Free robotics & coding competitions for kids in India", f"<h1>Free kids' robotics &amp; coding competitions in India</h1><p>Upcoming competitions whose official page lists the entry as free. Kits, hardware or software may still cost money; check each event's notes.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified free events right now.</p>'}",
               f"{len(L)} free-to-enter robotics, coding and Minecraft competitions for school kids in India, verified on official organizer pages."))
