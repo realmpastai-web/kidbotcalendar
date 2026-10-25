@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-24",
+ "checked": "2026-10-25",
  "results": [
   {
    "id": "wro-india-2026",
@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -229,6 +229,53 @@
    "changed": false,
    "years_seen": [
     "2026"
+   ]
+  },
+  {
+   "id": "codeavour-8-2026-27",
+   "url": "https://codeavour.org/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "codeavour-8-2026-27",
+   "url": "https://codeavour.org/register-now/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "codeavour-8-2026-27",
+   "url": "https://codeavour.org/codeavour-robotics-coding-competition-events/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "inaio-2027",
+   "url": "https://www.inaio.in/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "inaio-2027",
+   "url": "https://www.inaio.in/registration",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
    ]
   }
  ]
