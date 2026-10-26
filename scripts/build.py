@@ -102,6 +102,7 @@ for x in ev:
     src = " ".join(f'<a href="{e(u)}" rel=nofollow>{e(u)}</a>' for u in x["source_urls"])
     (D/f"events/{x['id']}.html").write_text(page(x["name"], f"{'<p><b>This event is over (archived).</b></p>' if past(x) else ''}<h1>{e(x['name'])}</h1><table>{rows}</table><p><a href=\"{e(x['url'])}\">Official page →</a></p><p><small>Sources: {src}</small></p>", "../", f"{x['name']}: dates, registration deadline, fee, ages and location, from the official organizer page.", f"events/{x['id']}.html"))
 (D/"CNAME").write_text("kidbotcalendar.in\n")
+(D/"googled5324eca40acbf99.html").write_text("google-site-verification: googled5324eca40acbf99.html")  # Search Console
 urls = [fn for fn, *_ in pages] + [f"events/{x['id']}.html" for x in ev]
 (D/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{SITE}{'' if u == 'index.html' else u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls) + "</urlset>\n")
 (D/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
