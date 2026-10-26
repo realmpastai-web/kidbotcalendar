@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-25",
+ "checked": "2026-10-26",
  "results": [
   {
    "id": "wro-india-2026",
@@ -42,7 +42,7 @@
    "id": "iro-2026-online",
    "url": "https://indianroboticsolympiad.in/online",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -52,7 +52,7 @@
    "id": "iro-2026-inperson",
    "url": "https://indianroboticsolympiad.in/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -173,7 +173,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -182,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -235,7 +235,7 @@
    "id": "codeavour-8-2026-27",
    "url": "https://codeavour.org/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -244,7 +244,7 @@
    "id": "codeavour-8-2026-27",
    "url": "https://codeavour.org/register-now/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -253,7 +253,7 @@
    "id": "codeavour-8-2026-27",
    "url": "https://codeavour.org/codeavour-robotics-coding-competition-events/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -262,7 +262,7 @@
    "id": "inaio-2027",
    "url": "https://www.inaio.in/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -272,7 +272,7 @@
    "id": "inaio-2027",
    "url": "https://www.inaio.in/registration",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"

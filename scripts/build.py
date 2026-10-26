@@ -44,7 +44,7 @@ if(c&&!d.dataset.city.includes(c))s=false;if(o&&d.dataset.dl&&d.dataset.dl<T)s=f
 document.querySelectorAll('input,select').forEach(i=>i.oninput=f)</script>""" % today
 TYPES = {"robotics": "Robotics", "coding": "Coding", "minecraft": "Minecraft"}
 nav = "<p>Browse: " + " · ".join([f'<a href="{mslug(d)}">Deadlines {d.strftime("%B %Y")}</a>' for d in months()] +
-      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="registration-open.html">Registration open</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="competitions-in-hyderabad.html">Hyderabad</a>', '<a href="competitions-in-pune.html">Pune</a>', '<a href="competitions-in-mumbai.html">Mumbai</a>', '<a href="competitions-by-age.html">By age</a>', '<a href="olympiads.html">Olympiads</a>', '<a href="ai-competitions.html">AI competitions</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
+      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="registration-open.html">Registration open</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="competitions-in-hyderabad.html">Hyderabad</a>', '<a href="competitions-in-pune.html">Pune</a>', '<a href="competitions-in-mumbai.html">Mumbai</a>', '<a href="competitions-in-kolkata.html">Kolkata</a>', '<a href="competitions-by-age.html">By age</a>', '<a href="olympiads.html">Olympiads</a>', '<a href="ai-competitions.html">AI competitions</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
 body = f"""<h1>Kids' tech competitions in India</h1><p>{len(up)} upcoming events tracked ({len(old)} past, see <a href="past-events.html">archive</a>).</p>{nav}
 <h2>Deadlines this month</h2>{''.join(card(x) for x in month) or '<p>No verified deadlines this month.</p>'}
 <h2>Upcoming events</h2>{filt}{''.join(card(x) for x in srt)}
@@ -68,7 +68,7 @@ pages.append(("online-competitions.html", "Online robotics & coding competitions
               f"{len(L)} online or hybrid robotics, coding and Minecraft competitions open to kids in India, with deadlines and ages."))
 CITIES = {"bangalore": ("Bangalore (Bengaluru)", ["bangalore", "bengaluru"]), "chennai": ("Chennai", ["chennai"]),
           "delhi-ncr": ("Delhi NCR", ["delhi", "noida", "gurugram"]), "hyderabad": ("Hyderabad", ["hyderabad"]),
-          "pune": ("Pune", ["pune"]), "mumbai": ("Mumbai", ["mumbai"])}
+          "pune": ("Pune", ["pune"]), "mumbai": ("Mumbai", ["mumbai"]), "kolkata": ("Kolkata", ["kolkata"])}
 for k, (v, keys) in CITIES.items():
     L = [x for x in srt if any(w in ((x["city"] or "") + " " + (x["notes"] or "")).lower() for w in keys)]
     if not L: continue
