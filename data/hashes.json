@@ -1,5 +1,5 @@
 {
- "https://wroindia.org/season-2026/": "d155e3c939f0af545ca5a1aba694e444e02779394b747ee743978b9ddbe3203a",
+ "https://wroindia.org/season-2026/": "d2913213f8d65b35c2a64e79f5e73960224d1765bfc432fdd721aaea95c50a11",
  "https://registration.wroindia.org/registration_Information.html": "293929a4446b9d898ac86e4cf8150bc9aeaf4df0deb481057f6e7a6e84a12a71",
  "https://www.firstrobotics.co.in/first-lego-league/": "163103923d69e04df1e4201e3cfcce4d445de44335bfbd581d2dc0e31e88bb81",
  "https://www.stemrobo.com/registration/": "a765c580c09f1223c3a8da7a2ec1d3497aa3a0597d1b894dca44d1e6aeeeed34",
@@ -8,8 +8,8 @@
  "https://worso.org/userpanel/": "d4637583e3d1286f016dea5e0d03f8ea49f473728ea69206696aec2bb584430c",
  "https://roboclub.technoxian.com/": "8640ceb7eb3f8a741cf94e1342375d4bdd59b6b43927f5e0289cf3100e9f9260",
  "https://techradiance.in/coding-robotics-championship-for-students/": "0336f68b90ac5a8e590b8765841a35aedc6c7c9572e6f8388cabf3bfa0951418",
- "https://www.bebras.in/register": "23c613344e20377acf65a0d93b8ac2d597f7d994ee661f724435b323e7f48f20",
- "https://www.bebras.in/": "fe9aec5e527a0422ba78dbb73fbae142bb5d70fa2d65d5026fb8c4e8956c8ab5",
+ "https://www.bebras.in/register": "5f1e4bb6f484f742fcc5741951f3e1a45420cf42ea261095c5d730decbc67f83",
+ "https://www.bebras.in/": "4316618ec7941dd9bae03028d702ecae3b7c4dd26bc6fc388ba0709108285250",
  "https://www.iarcs.org.in/inoi/current.php": "a7dfbe7dfe032aa731e364051b78d195372e6f90504659ba71a31d016263156e",
  "https://www.iarcs.org.in/inoi/": "141e8b9e6139937f6a597f31bd0b6415cf430950a0eed8107a12649599255244",
  "https://community.avishkaar.cc/avishkaar-league-2026": "2f711128c2f6478941a7885f7b226ead3cd6f29e1f218fb7dfcb8cfa2f47945c",
@@ -20,9 +20,11 @@
  "https://olympiad.polariscampus.com/": "66e5b6f4b37d5cebf3aff027658c5876c391f679e47638f820b648a14ca11497",
  "https://oll.co/techfest": "0268170688259c0eba1fa027162de036ead6764c23f4e8eb4c5ded62d0c2e253",
  "https://nrl.theinnovationstory.com/": "b0dc49592346b7bbca0ea6d1490e8ab148151517c330d7d7389fffbdaca04313",
- "https://codeavour.org/": "9a977d94f1a271204cf11af784cdfa10b6af660f05c1243c92f7ec754da8af19",
- "https://codeavour.org/register-now/": "6ff1afbaf5d9c7750818bf76f2dc7a5a9ce477f74c67e15fab1330dacaab0fbe",
- "https://codeavour.org/codeavour-robotics-coding-competition-events/": "b7dffbbf3c3b9c4031dbb198a7dbcbb9ae5b29a89c0bed5843042eba7618c6ec",
- "https://www.inaio.in/": "c9e94b317485d2cf1979dfb442846d49aa7fca1ee13ea1f5243a34cd217f0782",
- "https://www.inaio.in/registration": "6889135239cb26c6921c74bbf8ff502f1a9e58ccf324a46d7a9b9ed96b821048"
+ "https://codeavour.org/": "43a7fc7fe1de4c0200e79f6c97c11b90b101afac068de479831e5609d34e9daa",
+ "https://codeavour.org/register-now/": "a1ab53dadfc70a67e7522c7bffc818433ee6dddab25a7683a12ade2514cdc5bc",
+ "https://codeavour.org/codeavour-robotics-coding-competition-events/": "471bbb1fd1351e874abd705aa9a67708a7763cc36d6251e470c4dfeae74d387d",
+ "https://www.inaio.in/": "35147759437091e62584a74246d81adc3807e6362d6e02a0617ddf235e301077",
+ "https://www.inaio.in/registration": "00bb4c54bdfe1a764e23e6e2ef14efcdd7098b58d45671988ed729575511dc42",
+ "https://events.vex.com/robot-competitions/vex-iq-competition/RE-VIQRC-26-4225.html": "66f7507c876e6ffcf7428dff50e46e1178bef4d676921f362d4aaf58de6c2714",
+ "https://iof.education/computer-olympiad": "979bead9066eeb1e24c0d9a076b17057f26273ce8d88dfa4a69432411636f4ec"
 }
