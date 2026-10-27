@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -82,7 +82,7 @@
    "id": "techradiance-jr-2027",
    "url": "https://techradiance.in/coding-robotics-championship-for-students/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -146,7 +146,7 @@
    "id": "avishkaar-irc-league-2026",
    "url": "https://community.avishkaar.cc/avishkaar-league-2026",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -291,6 +291,43 @@
   {
    "id": "ifco-2026-27",
    "url": "https://iof.education/computer-olympiad",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "xrobotics-bharat-ai-challenge-2026",
+   "url": "https://xrbaic.xroboticsworks.com/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "xrobotics-bharat-ai-challenge-2026",
+   "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "xrobotics-bharat-ai-challenge-2026",
+   "url": "https://xrbaic.xroboticsworks.com/project-submission/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "avishkaar-codequest-2026",
+   "url": "https://community.avishkaar.cc/avishkaar-league-2026",
    "ok": true,
    "changed": false,
    "years_seen": [
