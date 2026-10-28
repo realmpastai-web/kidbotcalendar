@@ -560,5 +560,27 @@
   ],
   "notes": "Game design challenge for kids (2026 theme 'Mayday: The Final Call'). Stage 1 virtual presentation 1 Sep-30 Nov 2026*; Stage 2 live hackathon at the Avishkaar League Internationals in Delhi, 15-16 Jan 2027* (*dates subject to change per official page; venue TBA). Separate from the IRC League & Robo Battlegrounds zonals. Per-category grade bands and fee not stated on the official page. Ages approximated from grades.",
   "last_checked": "2026-10-27"
+ },
+ {
+  "id": "avishkaar-makeathon-2026",
+  "name": "Avishkaar Makeathon 2026 (science & tech project challenge, Avishkaar League)",
+  "organizer": "Avishkaar (Buildingblocks Learning Solutions)",
+  "type": "robotics",
+  "start_date": "2026-09-01",
+  "end_date": "2027-01-16",
+  "registration_deadline": null,
+  "fee": "Not published on official page",
+  "age_min": 6,
+  "age_max": 18,
+  "age_band": "Grades 1-12 (Avishkaar League)",
+  "city": "Stage 1 virtual; Stage 2 at Avishkaar League Internationals, Delhi",
+  "mode": "hybrid",
+  "status": "registration-open",
+  "url": "https://community.avishkaar.cc/avishkaar-league-2026",
+  "source_urls": [
+   "https://community.avishkaar.cc/avishkaar-league-2026"
+  ],
+  "notes": "Science and tech making challenge for kids (2026 theme 'Mayday: The Final Call'). Stage 1 virtual presentation 1 Sep-30 Nov 2026*; Stage 2 project presentation at the Avishkaar League Internationals in Delhi, 15-16 Jan 2027* (*dates subject to change per official page; venue TBA). Separate from the IRC League zonals and CodeQuest. Per-category grade bands and fee not stated on the official page. Ages approximated from grades.",
+  "last_checked": "2026-10-28"
  }
 ]
