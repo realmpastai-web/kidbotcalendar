@@ -258,15 +258,15 @@
   "age_min": 6,
   "age_max": 18,
   "age_band": "Grades 1-12",
-  "city": "Multiple zonals: Hyderabad, Bengaluru, Delhi, Chennai, Pune, Indore; finale Delhi",
+  "city": "Multiple zonals: Hyderabad, Bengaluru, Delhi, Chennai, Pune, Indore, Rudrapur; finale Delhi",
   "mode": "in-person",
   "status": "registration-open",
   "url": "https://community.avishkaar.cc/avishkaar-league-2026",
   "source_urls": [
    "https://community.avishkaar.cc/avishkaar-league-2026"
   ],
-  "notes": "Registration for each zonal closes one day before that zonal. Remaining zonals per official page: Hyderabad 14 Nov, Bengaluru (NPS KR Puram) 21 Nov, South Delhi 21 Nov, Chennai 21 Nov, West Delhi 5 Dec, Pune 5 Dec, Indore 15 Dec 2026; Sikkim Dec 2026 (tentative); Rudrapur TBA. Internationals in Delhi 15-16 Jan 2027 (subject to change). Fee not stated on the official page. Ages approximated from grades.",
-  "last_checked": "2026-10-28"
+  "notes": "Registration for each zonal closes one day before that zonal. Remaining zonals per official page: Hyderabad (B.M. Birla Science Centre) 14 Nov, Bengaluru (NPS KR Puram) 21 Nov, South Delhi 21 Nov, Chennai 21 Nov, West Delhi 5 Dec, Pune 5 Dec, Indore 15 Dec 2026; Rudrapur date TBA. Internationals in Delhi 15-16 Jan 2027 (subject to change). Fee not stated on the official page. Ages approximated from grades.",
+  "last_checked": "2026-10-29"
  },
  {
   "id": "jmt-shaastra-2026-27",
@@ -559,7 +559,7 @@
    "https://community.avishkaar.cc/avishkaar-league-2026"
   ],
   "notes": "Game design challenge for kids (2026 theme 'Mayday: The Final Call'). Stage 1 virtual presentation 1 Sep-30 Nov 2026*; Stage 2 live hackathon at the Avishkaar League Internationals in Delhi, 15-16 Jan 2027* (*dates subject to change per official page; venue TBA). Separate from the IRC League & Robo Battlegrounds zonals. Per-category grade bands and fee not stated on the official page. Ages approximated from grades.",
-  "last_checked": "2026-10-28"
+  "last_checked": "2026-10-29"
  },
  {
   "id": "avishkaar-makeathon-2026",
@@ -581,6 +581,28 @@
    "https://community.avishkaar.cc/avishkaar-league-2026"
   ],
   "notes": "Science and tech making challenge for kids (2026 theme 'Mayday: The Final Call'). Stage 1 virtual presentation 1 Sep-30 Nov 2026*; Stage 2 project presentation at the Avishkaar League Internationals in Delhi, 15-16 Jan 2027* (*dates subject to change per official page; venue TBA). Separate from the IRC League zonals and CodeQuest. Per-category grade bands and fee not stated on the official page. Ages approximated from grades.",
-  "last_checked": "2026-10-28"
+  "last_checked": "2026-10-29"
+ },
+ {
+  "id": "mechatron-junior-codemaster-2026",
+  "name": "Junior CodeMaster Championship 2026 (Scratch, PictoBlox & App Inventor)",
+  "organizer": "Mechatron Robotics",
+  "type": "coding",
+  "start_date": "2026-10-19",
+  "end_date": "2026-12-20",
+  "registration_deadline": "2026-11-08",
+  "fee": "INR 500 (USD 8 international)",
+  "age_min": 6,
+  "age_max": 15,
+  "age_band": "Ages 6-15 (Junior 6-9, Intermediate 10-12, Senior 13-15)",
+  "city": "Online",
+  "mode": "online",
+  "status": "registration-open",
+  "url": "https://www.mechatronrobotics.com/junior-codemaster-championship",
+  "source_urls": [
+   "https://www.mechatronrobotics.com/junior-codemaster-championship"
+  ],
+  "notes": "Build a project in Scratch, PictoBlox or MIT App Inventor on one of five themes and submit a 3-5 minute video. Per the official page: registration 19 Oct-8 Nov 2026, project submission by 29 Nov, finalists announced 6 Dec, virtual final round 13 Dec, award ceremony 20 Dec 2026. Five finalists shortlisted per age category.",
+  "last_checked": "2026-10-29"
  }
 ]
