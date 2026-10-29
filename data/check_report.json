@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-28",
+ "checked": "2026-10-29",
  "results": [
   {
    "id": "wro-india-2026",
@@ -23,7 +23,7 @@
    "id": "fll-india-2026-27",
    "url": "https://www.firstrobotics.co.in/first-lego-league/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -82,7 +82,7 @@
    "id": "techradiance-jr-2027",
    "url": "https://techradiance.in/coding-robotics-championship-for-students/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -146,7 +146,7 @@
    "id": "avishkaar-irc-league-2026",
    "url": "https://community.avishkaar.cc/avishkaar-league-2026",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -163,7 +163,7 @@
    "id": "ftc-india-2026-27",
    "url": "https://www.firstrobotics.co.in/first-tech-challenge/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -182,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -343,6 +343,15 @@
    "years_seen": [
     "2026",
     "2027"
+   ]
+  },
+  {
+   "id": "mechatron-junior-codemaster-2026",
+   "url": "https://www.mechatronrobotics.com/junior-codemaster-championship",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
    ]
   }
  ]
