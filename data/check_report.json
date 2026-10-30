@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -146,7 +146,7 @@
    "id": "avishkaar-irc-league-2026",
    "url": "https://community.avishkaar.cc/avishkaar-league-2026",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -173,7 +173,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -182,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -302,7 +302,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -311,7 +311,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -320,7 +320,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -353,6 +353,20 @@
    "years_seen": [
     "2026"
    ]
+  },
+  {
+   "id": "silverzone-iaio-2026-27",
+   "url": "https://www.silverzone.org/ai-Olympiad",
+   "ok": true,
+   "changed": false,
+   "years_seen": []
+  },
+  {
+   "id": "silverzone-iaio-2026-27",
+   "url": "https://www.silverzone.org/olympiadsdates",
+   "ok": true,
+   "changed": false,
+   "years_seen": []
   }
  ]
 }
