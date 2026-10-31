@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30",
+ "checked": "2026-10-31",
  "results": [
   {
    "id": "wro-india-2026",
@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -173,7 +173,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -226,7 +226,7 @@
    "id": "nrl-2026",
    "url": "https://nrl.theinnovationstory.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -302,7 +302,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -311,7 +311,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -320,7 +320,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -349,7 +349,7 @@
    "id": "mechatron-junior-codemaster-2026",
    "url": "https://www.mechatronrobotics.com/junior-codemaster-championship",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -367,6 +367,15 @@
    "ok": true,
    "changed": false,
    "years_seen": []
+  },
+  {
+   "id": "dezerv-childrens-day-hackathon-2026",
+   "url": "https://childrens-day-hackathon.dezerv.in/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
   }
  ]
 }
