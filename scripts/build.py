@@ -28,11 +28,13 @@ up = [x for x in ev if not past(x)]; old = [x for x in ev if past(x)]
 srt = sorted(up, key=lambda x: x["registration_deadline"] if (x["registration_deadline"] or "") >= today.isoformat() else (x["start_date"] or x["end_date"] or "9999"))
 ym = today.isoformat()[:7]
 month = [x for x in up if (x["registration_deadline"] or "")[:7] == ym and x["registration_deadline"] >= today.isoformat()]
-def months():  # this month + next two months
-    y, m = today.year, today.month
-    for _ in range(3):
+def months(start=None):  # this month + next two months (start= earlier month to also keep archived month pages live)
+    y, m = (start.year, start.month) if start else (today.year, today.month)
+    end = today.year * 12 + today.month + 2
+    while y * 12 + m <= end:
         yield datetime.date(y, m, 1)
         y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+FIRST_MONTH = datetime.date(2026, 10, 1)  # first deadlines page published; keep old month URLs live (no 404s)
 def mslug(d): return f"deadlines-{d.strftime('%B').lower()}-{d.year}.html"
 filt = """<div class=box><label>Age <input id=age type=number min=4 max=22 size=3></label>
 <label>Type <select id=type><option value="">All</option><option>robotics</option><option>coding</option><option>minecraft</option></select></label>
@@ -44,18 +46,19 @@ if(c&&!d.dataset.city.includes(c))s=false;if(o&&d.dataset.dl&&d.dataset.dl<T)s=f
 document.querySelectorAll('input,select').forEach(i=>i.oninput=f)</script>""" % today
 TYPES = {"robotics": "Robotics", "coding": "Coding", "minecraft": "Minecraft"}
 nav = "<p>Browse: " + " · ".join([f'<a href="{mslug(d)}">Deadlines {d.strftime("%B %Y")}</a>' for d in months()] +
-      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="free-online-competitions.html">Free &amp; online</a>', '<a href="registration-open.html">Registration open</a>', '<a href="closing-soon.html">Closing in 30 days</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="competitions-in-hyderabad.html">Hyderabad</a>', '<a href="competitions-in-pune.html">Pune</a>', '<a href="competitions-in-mumbai.html">Mumbai</a>', '<a href="competitions-in-kolkata.html">Kolkata</a>', '<a href="competitions-by-age.html">By age</a>', '<a href="olympiads.html">Olympiads</a>', '<a href="ai-competitions.html">AI competitions</a>', '<a href="innovation-challenges.html">Innovation &amp; hackathons</a>', '<a href="scratch-coding-competitions.html">Scratch &amp; block coding</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
+      [f'<a href="{k}-competitions.html">{v}</a>' for k, v in TYPES.items()] + ['<a href="online-competitions.html">Online</a>', '<a href="free-competitions.html">Free</a>', '<a href="free-online-competitions.html">Free &amp; online</a>', '<a href="registration-open.html">Registration open</a>', '<a href="closing-soon.html">Closing in 30 days</a>', '<a href="competitions-in-bangalore.html">Bangalore</a>', '<a href="competitions-in-delhi-ncr.html">Delhi NCR</a>', '<a href="competitions-in-chennai.html">Chennai</a>', '<a href="competitions-in-hyderabad.html">Hyderabad</a>', '<a href="competitions-in-pune.html">Pune</a>', '<a href="competitions-in-mumbai.html">Mumbai</a>', '<a href="competitions-in-kolkata.html">Kolkata</a>', '<a href="competitions-by-age.html">By age</a>', '<a href="olympiads.html">Olympiads</a>', '<a href="ai-competitions.html">AI competitions</a>', '<a href="innovation-challenges.html">Innovation &amp; hackathons</a>', '<a href="scratch-coding-competitions.html">Scratch &amp; block coding</a>', '<a href="app-and-game-design-competitions.html">App &amp; game design</a>', '<a href="past-events.html">Past events</a>']) + "</p>"
 body = f"""<h1>Kids' tech competitions in India</h1><p>{len(up)} upcoming events tracked ({len(old)} past, see <a href="past-events.html">archive</a>).</p>{nav}
 <h2>Deadlines this month</h2>{''.join(card(x) for x in month) or '<p>No verified deadlines this month.</p>'}
 <h2>Upcoming events</h2>{filt}{''.join(card(x) for x in srt)}
 <div class=box><b>Weekly deadline email</b> (coming soon) <input disabled placeholder="you@example.com"><button disabled>Notify me</button></div>
 <div class=box><b>Featured listing</b> placeholder — academies/organizers can sponsor a clearly-labelled spot. Not yet available.</div>"""
 pages = [("index.html", "Kids' robotics, coding & Minecraft competitions in India", body, "")]
-for d in months():
+for d in months(FIRST_MONTH):
     k = d.isoformat()[:7]; mn = d.strftime("%B %Y")
+    arch = f'<p class=box><b>{mn} is over.</b> Its deadlines have passed; see <a href="{mslug(today)}">deadlines this month</a> or <a href="registration-open.html">registration open now</a>. Competitions still running are listed below.</p>' if k < today.isoformat()[:7] else ""
     dl = sorted([x for x in up if (x["registration_deadline"] or "")[:7] == k and x["registration_deadline"] >= today.isoformat()], key=lambda x: x["registration_deadline"])
     on = sorted([x for x in up if x["start_date"] and x["start_date"][:7] <= k <= (x["end_date"] or x["start_date"])[:7]], key=lambda x: x["start_date"])
-    b = f"""<h1>Kids' robotics &amp; coding competition deadlines: {mn}</h1><p>Registration and submission deadlines falling in {mn} for kids' robotics, coding and Minecraft competitions in India, from official organizer pages. Always confirm on the official site.</p>{nav}
+    b = f"""<h1>Kids' robotics &amp; coding competition deadlines: {mn}</h1><p>Registration and submission deadlines falling in {mn} for kids' robotics, coding and Minecraft competitions in India, from official organizer pages. Always confirm on the official site.</p>{arch}{nav}
 <h2>Deadlines in {mn} ({len(dl)})</h2>{''.join(card(x) for x in dl) or '<p>No verified deadlines in this month yet.</p>'}
 <h2>Competitions happening in {mn} ({len(on)})</h2>{''.join(card(x) for x in on) or '<p>No verified competition dates in this month yet.</p>'}"""
     pages.append((mslug(d), f"Competition deadlines {mn}", b, f"Kids' robotics, coding and Minecraft competition deadlines in India for {mn}: {len(dl)} verified deadlines and {len(on)} events, with dates, fees and ages."))
@@ -93,6 +96,9 @@ pages.append(("innovation-challenges.html", "School innovation challenges & hack
 L = [x for x in srt if re.search(r"scratch|pictoblox|app inventor|block[- ]based|block coding", x["name"] + " " + (x["notes"] or ""), re.I)]
 pages.append(("scratch-coding-competitions.html", "Scratch & block coding competitions for kids in India", f"<h1>Scratch, PictoBlox &amp; block coding competitions for kids in India</h1><p>Upcoming competitions whose official page names Scratch, PictoBlox, MIT App Inventor or block-based coding as a platform, good first contests for younger coders. Always confirm dates, fees and eligibility on the official site.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified upcoming Scratch or block coding competitions right now.</p>'}",
               f"{len(L)} upcoming Scratch, PictoBlox and block coding competitions for kids in India, with dates, deadlines, fees and ages from official organizer pages."))
+L = [x for x in srt if re.search(r"game design|web app|\bapp\b|app inventor|app development", x["name"] + " " + (x["notes"] or ""), re.I)]
+pages.append(("app-and-game-design-competitions.html", "App & game design competitions for kids in India", f"<h1>App &amp; game design competitions for kids in India</h1><p>Upcoming competitions where kids build a web or mobile app or design a game, as described on the official organizer page. Good picks for kids who like making things on screen more than building robots. Always confirm dates, fees and eligibility on the official site.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified upcoming app or game design competitions right now.</p>'}",
+              f"{len(L)} upcoming app-building and game design competitions for kids in India, with dates, deadlines, fees and ages from official organizer pages."))
 L = [x for x in srt if (x["fee"] or "").lower().startswith("free")]
 pages.append(("free-competitions.html", "Free robotics & coding competitions for kids in India", f"<h1>Free kids' robotics &amp; coding competitions in India</h1><p>Upcoming competitions whose official page lists the entry as free. Kits, hardware or software may still cost money; check each event's notes.</p>{nav}{''.join(card(x) for x in L) or '<p>No verified free events right now.</p>'}",
               f"{len(L)} free-to-enter robotics, coding and Minecraft competitions for school kids in India, verified on official organizer pages."))

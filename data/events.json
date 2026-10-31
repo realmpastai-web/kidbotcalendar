@@ -627,5 +627,27 @@
   ],
   "notes": "Single-level (Level 1) AI olympiad for Classes 1-10: 40-minute objective (MCQ) paper in English, no negative marking, sections on AI and Scholar's Zone, held during school hours at the student's own school. Schools pick one of two dates: the first date (7 Oct 2026) has passed; the remaining date is Monday 23 Nov 2026. Students enter through their school (minimum 20 students per school; no fee to register the school). Registration deadline: the official dates page says registration is allowed up to 15 days before the November/December exam dates, while the site banner says 30 days before, so confirm with SilverZone. Student fee not stated on the official AI Olympiad page. Ages approximated from classes.",
   "last_checked": "2026-10-30"
+ },
+ {
+  "id": "dezerv-childrens-day-hackathon-2026",
+  "name": "Dezerv Children's Day Hackathon 2026 (build a kids' money web app)",
+  "organizer": "Dezerv",
+  "type": "coding",
+  "start_date": "2026-10-28",
+  "end_date": "2026-11-14",
+  "registration_deadline": "2026-11-08",
+  "fee": "Free",
+  "age_min": 8,
+  "age_max": 18,
+  "age_band": "Juniors 8-12, Seniors 13-18 (age on 14 Nov 2026); solo or teams of up to 3 in the same age group",
+  "city": "Online",
+  "mode": "online",
+  "status": "registration-open",
+  "url": "https://childrens-day-hackathon.dezerv.in/",
+  "source_urls": [
+   "https://childrens-day-hackathon.dezerv.in/"
+  ],
+  "notes": "Hackathon: build a working personal-finance web app for kids (made-up amounts only, no real money). Any method allowed: app builder, no-code tool, AI or own code. A parent or guardian registers by 8 Nov; submit app link + demo video (2 min or less) by 10 Nov 2026, 11:59 pm IST; top 10 told by email 12 Nov; top 3 present live online 14 Nov. Prizes worth up to INR 1 lakh.",
+  "last_checked": "2026-10-31"
  }
 ]
