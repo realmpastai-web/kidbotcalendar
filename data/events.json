@@ -649,5 +649,28 @@
   ],
   "notes": "Hackathon: build a working personal-finance web app for kids (made-up amounts only, no real money). Any method allowed: app builder, no-code tool, AI or own code. A parent or guardian registers by 8 Nov; submit app link + demo video (2 min or less) by 10 Nov 2026, 11:59 pm IST; top 10 told by email 12 Nov; top 3 present live online 14 Nov. Prizes worth up to INR 1 lakh.",
   "last_checked": "2026-10-31"
+ },
+ {
+  "id": "yuvasetu-2026",
+  "name": "YUVASETU National School AI Hackathon 2026 (CoGrad)",
+  "organizer": "CoGrad",
+  "type": "coding",
+  "start_date": "2026-10-10",
+  "end_date": null,
+  "registration_deadline": "2026-11-02",
+  "fee": "₹399 solo; ₹299 per student in a team of 2-4",
+  "age_min": 13,
+  "age_max": 18,
+  "age_band": "Classes 8-12 (ages approximated from classes); teams of 2-4 students plus 1 mentor teacher",
+  "city": "Online registration; Grand Finale venue for 2026 not stated on official page",
+  "mode": "hybrid",
+  "status": "registration-open",
+  "url": "https://cograd.in/hackathon",
+  "source_urls": [
+   "https://cograd.in/hackathon",
+   "https://cograd.in/hackathon/register"
+  ],
+  "notes": "National school AI hackathon, theme 'Tech for a Self-Reliant Bharat', six problem domains (Education, Health, Environment & Cleanliness, Agriculture & Rural Life, Safety & Smart Communities, Open Innovation). Stages: register, idea round, bootcamp, prototype, finalists, grand finale. Registration window 10 Oct to 2 Nov 2026; school nominates a coordinator and parental consent is collected. Open to any school and board in India. Later round dates and the 2026 finale venue are not stated on the official page.",
+  "last_checked": "2026-11-01"
  }
 ]
