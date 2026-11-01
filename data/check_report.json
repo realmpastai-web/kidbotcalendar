@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -126,7 +126,7 @@
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/current.php",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -136,7 +136,7 @@
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -182,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -226,7 +226,7 @@
    "id": "nrl-2026",
    "url": "https://nrl.theinnovationstory.com/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -302,7 +302,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -311,7 +311,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -320,7 +320,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
