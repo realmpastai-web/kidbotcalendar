@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31",
+ "checked": "2026-11-01",
  "results": [
   {
    "id": "wro-india-2026",
@@ -126,7 +126,7 @@
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/current.php",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -136,7 +136,7 @@
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -173,7 +173,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -182,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -349,7 +349,7 @@
    "id": "mechatron-junior-codemaster-2026",
    "url": "https://www.mechatronrobotics.com/junior-codemaster-championship",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -376,6 +376,20 @@
    "years_seen": [
     "2026"
    ]
+  },
+  {
+   "id": "yuvasetu-2026",
+   "url": "https://cograd.in/hackathon",
+   "ok": true,
+   "changed": false,
+   "years_seen": []
+  },
+  {
+   "id": "yuvasetu-2026",
+   "url": "https://cograd.in/hackathon/register",
+   "ok": true,
+   "changed": false,
+   "years_seen": []
   }
  ]
 }
