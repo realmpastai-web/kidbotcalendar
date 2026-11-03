@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02",
+ "checked": "2026-11-03",
  "results": [
   {
    "id": "wro-india-2026",
@@ -23,7 +23,7 @@
    "id": "fll-india-2026-27",
    "url": "https://www.firstrobotics.co.in/first-lego-league/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -136,7 +136,7 @@
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -162,14 +162,18 @@
   {
    "id": "ftc-india-2026-27",
    "url": "https://www.firstrobotics.co.in/first-tech-challenge/",
-   "ok": false,
-   "error": "IncompleteRead(0 bytes read)"
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
   },
   {
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -178,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -298,7 +302,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -307,7 +311,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -316,7 +320,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -390,6 +394,25 @@
   {
    "id": "ito-ico-2026-27",
    "url": "https://www.indiantalent.org/olympiad-exams",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "unified-uco-online-2026-27",
+   "url": "https://www.unifiedcouncil.com/about-uco-online.html",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "unified-uco-online-2026-27",
+   "url": "https://www.unifiedcouncil.com/options.html",
    "ok": true,
    "changed": false,
    "years_seen": [
