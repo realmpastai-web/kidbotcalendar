@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03",
+ "checked": "2026-11-04",
  "results": [
   {
    "id": "wro-india-2026",
@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -51,12 +51,8 @@
   {
    "id": "iro-2026-inperson",
    "url": "https://indianroboticsolympiad.in/",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
   },
   {
    "id": "technoxian-nrc-2026",
@@ -125,22 +121,14 @@
   {
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/current.php",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
   },
   {
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
   },
   {
    "id": "avishkaar-irc-league-2026",
@@ -173,7 +161,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -182,7 +170,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -215,12 +203,8 @@
   {
    "id": "zco-2027",
    "url": "https://www.iarcs.org.in/inoi/",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
   },
   {
    "id": "nrl-2026",
@@ -302,7 +286,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -311,7 +295,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -320,7 +304,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -395,7 +379,7 @@
    "id": "ito-ico-2026-27",
    "url": "https://www.indiantalent.org/olympiad-exams",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -413,6 +397,16 @@
   {
    "id": "unified-uco-online-2026-27",
    "url": "https://www.unifiedcouncil.com/options.html",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "crest-cco-2026-27",
+   "url": "https://www.crestolympiads.com/cyber-olympiad-cco",
    "ok": true,
    "changed": false,
    "years_seen": [
