@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04",
+ "checked": "2026-11-05",
  "results": [
   {
    "id": "wro-india-2026",
@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -125,22 +125,14 @@
   {
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/current.php",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "The read operation timed out"
   },
   {
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/",
-   "ok": true,
-   "changed": true,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "The read operation timed out"
   },
   {
    "id": "avishkaar-irc-league-2026",
@@ -173,7 +165,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -182,7 +174,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -205,22 +197,14 @@
   {
    "id": "zco-2027",
    "url": "https://www.iarcs.org.in/inoi/current.php",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "<urlopen error _ssl.c:1012: The handshake operation timed out>"
   },
   {
    "id": "zco-2027",
    "url": "https://www.iarcs.org.in/inoi/",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "The read operation timed out"
   },
   {
    "id": "nrl-2026",
@@ -302,27 +286,30 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
-    "2026"
+    "2026",
+    "2027"
    ]
   },
   {
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
-    "2026"
+    "2026",
+    "2027"
    ]
   },
   {
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
-    "2026"
+    "2026",
+    "2027"
    ]
   },
   {
@@ -427,6 +414,35 @@
    "changed": true,
    "years_seen": [
     "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "technovation-2027",
+   "url": "https://technovationchallenge.org/competition/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "technovation-2027",
+   "url": "https://technovationchallenge.org/get-involved/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "iba-rw-2027",
+   "url": "https://www.ibacademy.in/rw2027/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
     "2027"
    ]
   }
