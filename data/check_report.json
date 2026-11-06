@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-05",
+ "checked": "2026-11-06",
  "results": [
   {
    "id": "wro-india-2026",
@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -51,12 +51,8 @@
   {
    "id": "iro-2026-inperson",
    "url": "https://indianroboticsolympiad.in/",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
   },
   {
    "id": "technoxian-nrc-2026",
@@ -125,14 +121,22 @@
   {
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/current.php",
-   "ok": false,
-   "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
   },
   {
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/",
-   "ok": false,
-   "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
   },
   {
    "id": "avishkaar-irc-league-2026",
@@ -165,7 +169,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -174,7 +178,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -197,14 +201,22 @@
   {
    "id": "zco-2027",
    "url": "https://www.iarcs.org.in/inoi/current.php",
-   "ok": false,
-   "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
   },
   {
    "id": "zco-2027",
    "url": "https://www.iarcs.org.in/inoi/",
-   "ok": false,
-   "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
   },
   {
    "id": "nrl-2026",
@@ -286,7 +298,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -296,7 +308,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -306,7 +318,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -443,6 +455,58 @@
    "ok": true,
    "changed": false,
    "years_seen": [
+    "2027"
+   ]
+  },
+  {
+   "id": "global-appathon-2027",
+   "url": "https://globalappathon.org/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027",
+    "2028"
+   ]
+  },
+  {
+   "id": "global-appathon-2027",
+   "url": "https://globalappathon.org/registration-submission/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "global-appathon-2027",
+   "url": "https://globalappathon.org/faq/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027",
+    "2028"
+   ]
+  },
+  {
+   "id": "coolest-projects-online-2027",
+   "url": "https://online.coolestprojects.org/take-part",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "coolest-projects-online-2027",
+   "url": "https://online.coolestprojects.org/help",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
     "2027"
    ]
   }
