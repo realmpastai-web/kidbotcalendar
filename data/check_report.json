@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -173,7 +173,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -182,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -302,7 +302,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -312,7 +312,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -322,7 +322,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -352,7 +352,7 @@
    "id": "mechatron-junior-codemaster-2026",
    "url": "https://www.mechatronrobotics.com/junior-codemaster-championship",
    "ok": false,
-   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
+   "error": "<urlopen error timed out>"
   },
   {
    "id": "silverzone-iaio-2026-27",
@@ -395,7 +395,7 @@
    "id": "ito-ico-2026-27",
    "url": "https://www.indiantalent.org/olympiad-exams",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -454,7 +454,7 @@
    "id": "iba-rw-2027",
    "url": "https://www.ibacademy.in/rw2027/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2027"
    ]
@@ -463,7 +463,7 @@
    "id": "global-appathon-2027",
    "url": "https://globalappathon.org/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027",
@@ -474,7 +474,7 @@
    "id": "global-appathon-2027",
    "url": "https://globalappathon.org/registration-submission/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -585,7 +585,7 @@
    "id": "advent-of-code-2026",
    "url": "https://adventofcode.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -594,7 +594,7 @@
    "id": "advent-of-code-2026",
    "url": "https://adventofcode.com/2026/about",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -603,7 +603,7 @@
    "id": "advent-of-code-2026",
    "url": "https://adventofcode.com/2026/events",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
