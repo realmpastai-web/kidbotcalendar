@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -457,10 +457,8 @@
    "id": "iba-rw-2027",
    "url": "https://www.ibacademy.in/rw2027/",
    "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2027"
-   ]
+   "changed": true,
+   "years_seen": []
   },
   {
    "id": "global-appathon-2027",
