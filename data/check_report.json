@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-08",
+ "checked": "2026-11-09",
  "results": [
   {
    "id": "wro-india-2026",
@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -173,7 +173,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -182,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -302,7 +302,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -312,7 +312,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -322,7 +322,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -351,8 +351,11 @@
   {
    "id": "mechatron-junior-codemaster-2026",
    "url": "https://www.mechatronrobotics.com/junior-codemaster-championship",
-   "ok": false,
-   "error": "<urlopen error timed out>"
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026"
+   ]
   },
   {
    "id": "silverzone-iaio-2026-27",
@@ -395,7 +398,7 @@
    "id": "ito-ico-2026-27",
    "url": "https://www.indiantalent.org/olympiad-exams",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -474,7 +477,7 @@
    "id": "global-appathon-2027",
    "url": "https://globalappathon.org/registration-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -612,7 +615,7 @@
    "id": "usseo-hitl-2027",
    "url": "https://recf.org/online_challenge/usseo-human-in-the-loop-robotics-ai-challenge/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -635,6 +638,24 @@
    "changed": false,
    "years_seen": [
     "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "navyugam-2027",
+   "url": "https://navyugam.com/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2027"
+   ]
+  },
+  {
+   "id": "stem-xpert-innovation-fest-2027",
+   "url": "https://skill.stem-xpert.com/innovationfest2027/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
     "2027"
    ]
   }
