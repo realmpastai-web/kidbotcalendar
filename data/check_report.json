@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-12",
+ "checked": "2026-11-13",
  "results": [
   {
    "id": "wro-india-2026",
@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -62,7 +62,7 @@
    "id": "technoxian-nrc-2026",
    "url": "https://worso.org/userpanel/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -173,7 +173,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -182,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -303,7 +303,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -313,7 +313,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -323,7 +323,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -616,7 +616,7 @@
    "id": "usseo-hitl-2027",
    "url": "https://recf.org/online_challenge/usseo-human-in-the-loop-robotics-ai-challenge/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -692,14 +692,41 @@
   {
    "id": "g4c-student-challenge-2027",
    "url": "https://g4cstudentchallenge.secure-platform.com/a/organizations/main/home",
-   "ok": false,
-   "error": "HTTP Error 403: Forbidden"
+   "ok": true,
+   "changed": true,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
   },
   {
    "id": "g4c-student-challenge-2027",
    "url": "https://g4cstudentchallenge.secure-platform.com/a/page/faq",
-   "ok": false,
-   "error": "HTTP Error 403: Forbidden"
+   "ok": true,
+   "changed": true,
+   "years_seen": [
+    "2026"
+   ]
+  },
+  {
+   "id": "apple-swift-student-challenge-2027",
+   "url": "https://developer.apple.com/swift-student-challenge/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
+  },
+  {
+   "id": "apple-swift-student-challenge-2027",
+   "url": "https://developer.apple.com/swift-student-challenge/eligibility/",
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
   }
  ]
 }
