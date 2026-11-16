@@ -126,7 +126,7 @@
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/current.php",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -136,7 +136,7 @@
    "id": "zio-2027",
    "url": "https://www.iarcs.org.in/inoi/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -636,7 +636,7 @@
    "id": "usseo-hitl-2027",
    "url": "https://www.usseo.org/challenges/cd371f3a-627e-4377-9091-f3ceb1925ba2",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
