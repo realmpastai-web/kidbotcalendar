@@ -23,7 +23,7 @@
    "id": "fll-india-2026-27",
    "url": "https://www.firstrobotics.co.in/first-lego-league/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -33,7 +33,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -82,7 +82,7 @@
    "id": "techradiance-jr-2027",
    "url": "https://techradiance.in/coding-robotics-championship-for-students/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -182,7 +182,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -234,30 +234,20 @@
   {
    "id": "codeavour-8-2026-27",
    "url": "https://codeavour.org/",
-   "ok": true,
-   "changed": true,
-   "years_seen": [
-    "2026"
-   ]
+   "ok": false,
+   "error": "The read operation timed out"
   },
   {
    "id": "codeavour-8-2026-27",
    "url": "https://codeavour.org/register-now/",
-   "ok": true,
-   "changed": true,
-   "years_seen": [
-    "2026"
-   ]
+   "ok": false,
+   "error": "The read operation timed out"
   },
   {
    "id": "codeavour-8-2026-27",
    "url": "https://codeavour.org/codeavour-robotics-coding-competition-events/",
-   "ok": true,
-   "changed": true,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "The read operation timed out"
   },
   {
    "id": "inaio-2027",
@@ -303,7 +293,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -313,7 +303,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -323,7 +313,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -458,10 +448,8 @@
    "id": "iba-rw-2027",
    "url": "https://www.ibacademy.in/rw2027/",
    "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2027"
-   ]
+   "changed": true,
+   "years_seen": []
   },
   {
    "id": "global-appathon-2027",
@@ -616,7 +604,7 @@
    "id": "usseo-hitl-2027",
    "url": "https://recf.org/online_challenge/usseo-human-in-the-loop-robotics-ai-challenge/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
