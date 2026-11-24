@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-23",
+ "checked": "2026-11-24",
  "results": [
   {
    "id": "wro-india-2026",
@@ -14,7 +14,7 @@
    "id": "wro-india-2026",
    "url": "https://registration.wroindia.org/registration_Information.html",
    "ok": false,
-   "error": "<urlopen error timed out>"
+   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
   },
   {
    "id": "fll-india-2026-27",
@@ -79,7 +79,7 @@
    "id": "techradiance-jr-2027",
    "url": "https://techradiance.in/coding-robotics-championship-for-students/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -170,7 +170,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026"
    ]
@@ -300,7 +300,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -310,7 +310,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -320,7 +320,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -454,8 +454,11 @@
   {
    "id": "iba-rw-2027",
    "url": "https://www.ibacademy.in/rw2027/",
-   "ok": false,
-   "error": "<urlopen error timed out>"
+   "ok": true,
+   "changed": false,
+   "years_seen": [
+    "2027"
+   ]
   },
   {
    "id": "global-appathon-2027",
@@ -482,7 +485,7 @@
    "id": "global-appathon-2027",
    "url": "https://globalappathon.org/faq/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027",
@@ -686,14 +689,21 @@
   {
    "id": "g4c-student-challenge-2027",
    "url": "https://g4cstudentchallenge.secure-platform.com/a/organizations/main/home",
-   "ok": false,
-   "error": "HTTP Error 403: Forbidden"
+   "ok": true,
+   "changed": true,
+   "years_seen": [
+    "2026",
+    "2027"
+   ]
   },
   {
    "id": "g4c-student-challenge-2027",
    "url": "https://g4cstudentchallenge.secure-platform.com/a/page/faq",
-   "ok": false,
-   "error": "HTTP Error 403: Forbidden"
+   "ok": true,
+   "changed": true,
+   "years_seen": [
+    "2026"
+   ]
   },
   {
    "id": "apple-swift-student-challenge-2027",
@@ -728,7 +738,7 @@
    "id": "balki-robocup-hackathon-2027",
    "url": "https://www.linkedin.com/posts/balki-technologies-private-limited_robocup2027-stemeducation-robotics-activity-7524120485161447424-79lW",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
