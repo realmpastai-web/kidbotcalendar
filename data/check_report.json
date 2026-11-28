@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-27",
+ "checked": "2026-11-28",
  "results": [
   {
    "id": "wro-india-2026",
@@ -14,7 +14,7 @@
    "id": "wro-india-2026",
    "url": "https://registration.wroindia.org/registration_Information.html",
    "ok": false,
-   "error": "<urlopen error timed out>"
+   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
   },
   {
    "id": "fll-india-2026-27",
@@ -30,7 +30,7 @@
    "id": "stemrobo-sil-2",
    "url": "https://www.stemrobo.com/registration/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -38,22 +38,14 @@
   {
    "id": "iro-2026-online",
    "url": "https://indianroboticsolympiad.in/online",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
   },
   {
    "id": "iro-2026-inperson",
    "url": "https://indianroboticsolympiad.in/",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026",
-    "2027"
-   ]
+   "ok": false,
+   "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>"
   },
   {
    "id": "technoxian-nrc-2026",
@@ -170,7 +162,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/icso",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026"
    ]
@@ -179,7 +171,7 @@
    "id": "sof-icso-2026-27",
    "url": "https://sofworld.org/exam-schedule",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -300,7 +292,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -310,7 +302,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/terms-conditions/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -320,7 +312,7 @@
    "id": "xrobotics-bharat-ai-challenge-2026",
    "url": "https://xrbaic.xroboticsworks.com/project-submission/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
@@ -372,11 +364,8 @@
   {
    "id": "dezerv-childrens-day-hackathon-2026",
    "url": "https://childrens-day-hackathon.dezerv.in/",
-   "ok": true,
-   "changed": false,
-   "years_seen": [
-    "2026"
-   ]
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "id": "yuvasetu-2026",
@@ -456,7 +445,9 @@
    "url": "https://www.ibacademy.in/rw2027/",
    "ok": true,
    "changed": true,
-   "years_seen": []
+   "years_seen": [
+    "2027"
+   ]
   },
   {
    "id": "global-appathon-2027",
@@ -473,7 +464,7 @@
    "id": "global-appathon-2027",
    "url": "https://globalappathon.org/registration-submission/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027"
@@ -483,7 +474,7 @@
    "id": "global-appathon-2027",
    "url": "https://globalappathon.org/faq/",
    "ok": true,
-   "changed": true,
+   "changed": false,
    "years_seen": [
     "2026",
     "2027",
@@ -728,7 +719,9 @@
    "url": "https://www.sedm.in.net/page.php?name=my-discovery",
    "ok": true,
    "changed": true,
-   "years_seen": []
+   "years_seen": [
+    "2026"
+   ]
   },
   {
    "id": "balki-robocup-hackathon-2027",
@@ -746,6 +739,7 @@
    "ok": true,
    "changed": true,
    "years_seen": [
+    "2026",
     "2027"
    ]
   },
@@ -762,7 +756,7 @@
    "id": "hkico-india-2026-27",
    "url": "https://globalolympiadsacademy.com/hkico/",
    "ok": true,
-   "changed": false,
+   "changed": true,
    "years_seen": [
     "2026",
     "2027"
